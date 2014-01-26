@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>circuit.js demo page</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background: #ccc;
+            }
+
+            canvas {
+                display: block;
+                margin: auto;
+                border: 1px solid #888;
+                background: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="schematic" width="500" height="500"></canvas>
+        <script src="circuit.js"></script>
+        <script>
+            var canvas = document.getElementById('schematic');
+            var context = canvas.getContext('2d');
+
+            circuit.part('LM399').draw(canvas);
+        </script>
+    </body>
+</html>
