@@ -23,7 +23,20 @@
             var canvas = document.getElementById('schematic');
             var context = canvas.getContext('2d');
 
-            circuit.part('LM339').draw(canvas);
+            circuit.part({
+                title: 'OPA2107',
+                type: 'dip',
+                pins: [
+                    'OUTPUT1',
+                    'INPUT1-',
+                    'INPUT1+',
+                    'V-',
+                    'INPUT1+',
+                    'INPUT1-',
+                    'OUTPUT2',
+                    'V+'
+                ]
+            }).draw(canvas);
         </script>
     </body>
 </html>

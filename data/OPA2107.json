@@ -1,0 +1,14 @@
+{
+    "title": "OPA2107",
+    "type": "dip",
+    "pins": [
+        "OUTPUT1",
+        "INPUT1-",
+        "INPUT1+",
+        "V-",
+        "INPUT1+",
+        "INPUT1-",
+        "OUTPUT2",
+        "V+"
+    ]
+}

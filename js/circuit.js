@@ -7,10 +7,6 @@ var circuit = (function() {
     };
 
     circuit.part = function(data) {
-        if (typeof data === 'string') {
-            data = circuit.parts[data];
-        }
-
         return new Part(data);
     };
     
@@ -22,8 +18,6 @@ var circuit = (function() {
         };
     };
 
-    circuit.parts = {};
-    
     circuit.scale = 50;
 
     return circuit;

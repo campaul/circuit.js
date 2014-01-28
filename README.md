@@ -2,20 +2,10 @@
 
 **circuit.js** is a library for drawing circuits using HTML5 Canvas.
 
-## Creating a Part
-
-Any of the included parts can be created by name.
+## Creating a part
 
 ```javascript
-var part = circuit.create('LM339');
-```
-
-## Registering a Part
-
-New parts can be registered in the **circuit.js** namespace. Then they can be created the same way as the included parts.
-
-```javascript
-circuit.part.OPA2107 = {
+var part = circuit.part({
     title: 'OPA2107',
     type: 'dip',
     pins: [
@@ -28,7 +18,7 @@ circuit.part.OPA2107 = {
         'OUTPUT2',
         'V+'
     ]
-}
+});
 ```
 
 ## Drawing a Part

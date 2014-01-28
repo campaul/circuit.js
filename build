@@ -1,1 +1,1 @@
-uglifyjs js/core.js js/parts.js js/parts/* -o circuit.js
+uglifyjs js/circuit.js js/parts/* -o circuit.js
