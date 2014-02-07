@@ -1,6 +1,9 @@
 circuit.define('dip', {
     draw: function(data, canvas) {
         var context = canvas.getContext('2d');
+        context.save();
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
         // Make 1px lines draw cleanly
         context.translate(0.5, 0.5)
         
@@ -46,5 +49,7 @@ circuit.define('dip', {
         var titleX = (canvas.width / 2) - (context.measureText(data.title).width / 2);
         var titleY = fontSize * 2;
         context.fillText(data.title, titleX, titleY);
+
+        context.restore();
     }
 });
