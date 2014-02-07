@@ -2,7 +2,7 @@ circuit.define('dip', {
     draw: function(data, canvas) {
         var context = canvas.getContext('2d');
         context.save();
-        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.clearRect(0, 0, canvas.width, canvas.height);
 
         // Make 1px lines draw cleanly
         context.translate(0.5, 0.5)
